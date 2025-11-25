@@ -1,0 +1,306 @@
+    * {
+
+      box-sizing: border-box;
+
+    }
+
+
+        
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        .left {
+          display: inline-block;
+          position: absolute;
+          left: 25px;
+          top: 20px;
+        }
+        .left img {
+          width: 150px;
+          height: 100px;
+        }
+        .mid {
+          display: block;
+          width: 52%;
+          margin: 20px auto;
+        }
+        .right {
+          position: absolute;
+          right: 25px;
+          top: 5px;
+          display: inline-block;
+        }
+        .navbar li {
+          display: inline;
+          margin: 20px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .navbar li a {
+          text-decoration: none;
+          color: black;
+          font-size: 25px;
+        }
+        .navbar li a:hover {
+          color: blue;
+          text-decoration: underline;
+        }
+        .button {
+          background-color: white;
+          color: black;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 10px 20px;
+          margin: 10px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .button:hover {
+          color: blue;
+          text-decoration: underline;
+        }
+        body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; 
+    }
+
+    .hero-section {
+      background-image: url("buildmartimage.png");
+      background-size: cover;
+      height: 530px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .hero-msg {
+      background-color:white;
+      color: black;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      width: 80%;
+      margin-bottom: 250px;
+      
+
+    }
+
+    /** shop section **/
+    .shop-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: white;
+
+    }
+
+    .box {
+      height: 300px;
+      width: 23%;
+      background-color: white;
+      padding: 10px 0px 5px;
+      margin-top: 2px;
+    }
+
+    .box-img {
+      height: 300px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background-color: white;
+    }
+
+    .box-content p{
+      margin-left: 5px;
+      margin-right: 5px;
+
+    }
+    .box-content h2 {
+      text-align: center; 
+      margin-top: 20px; 
+      margin-bottom: 5px; 
+    }
+/* Footer Section */
+.main-footer {
+    background-color: #333; 
+    color: #f4f4f4; 
+    padding-top: 50px;
+    margin-top:80px; 
+    font-family: 'Source Sans 3', sans-serif; 
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px 40px; 
+}
+
+.footer-col {
+    flex: 1; 
+    min-width: 280px; 
+    padding: 10px; 
+}
+
+.footer-col h3 {
+    color: #007bff; /* Accent color for footer headings (a vibrant blue) */
+    font-size: 1.5rem; /* Size for headings */
+    margin-bottom: 25px; /* Space below headings */
+    border-bottom: 2px solid #007bff; /* A subtle underline for headings */
+    padding-bottom: 10px; /* Space between heading text and underline */
+    display: inline-block; /* Makes the border-bottom only as wide as the text */
+}
+
+/* Footer Brand Column Styling */
+.footer-brand {
+    text-align: left; /* Align text content to the left */
+}
+
+.footer-logo {
+    width: 150px; /* Set a specific width for your logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+.footer-brand p {
+    font-size: 0.9rem; /* Smaller font size for descriptive text */
+    line-height: 1.6; /* Improved readability for paragraphs */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.social-links {
+    display: flex; /* Use flexbox for social icons */
+    gap: 15px; /* Space between social icons */
+}
+
+.social-icon img {
+    width: 30px; /* Size of social media icons */
+    height: 30px;
+    filter: invert(1); /* Inverts the colors of the icons, making them white for a dark background */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover img {
+    transform: translateY(-5px); /* Simple upward lift on hover */
+}
+
+/* Footer Contact Info Column Styling */
+.footer-contact-info p {
+    font-size: 1rem; /* Standard font size for contact details */
+    margin-bottom: 10px; /* Space between contact lines */
+    text-align: left; /* Align text content to the left */
+}
+
+/* Footer Form Column Styling */
+.footer-form-col {
+    text-align: left; /* Align form labels/placeholders to the left */
+}
+
+.footer-form input[type="text"],
+.footer-form input[type="email"],
+.footer-form textarea {
+    width: 100%; /* Make input fields and textarea fill their container */
+    padding: 12px; /* Internal padding for input fields */
+    margin-bottom: 15px; /* Space between form elements */
+    border: 1px solid #555; /* Subtle border for fields */
+    background-color: #444; /* Slightly lighter dark background for fields */
+    color: #f4f4f4; /* Light text color for user input */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 1rem; /* Font size for input text */
+    font-family: 'Source Sans 3', sans-serif; /* Consistent font */
+}
+
+.footer-form textarea {
+    resize: vertical; /* Allow users to resize textarea vertically */
+    min-height: 80px; /* Minimum height for the textarea */
+}
+
+.footer-form input::placeholder,
+.footer-form textarea::placeholder {
+    color: #bbb; /* Lighter placeholder text color */
+}
+
+.footer-submit-btn {
+    background-color: #007bff; /* Accent button color */
+    color: white; /* White text on button */
+    padding: 12px 25px; /* Padding for the button */
+    border: none; /* No border for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.1rem; /* Font size for button text */
+    font-weight: bold; /* Bold text for the button */
+    width: 100%; /* Make button full width */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-submit-btn:hover {
+    background-color: #0056b3; /* Darker accent color on hover */
+}
+
+/* Footer Bottom Section (Copyright & Legal Links) */
+.footer-bottom {
+    background-color: #222; /* Even darker background for the bottom strip */
+    padding: 20px; /* Padding inside the bottom strip */
+    text-align: center; /* Center the text */
+    font-size: 0.9rem; /* Smaller font size */
+    border-top: 1px solid #444; /* A subtle top border to separate it */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove default paragraph margin */
+}
+
+.footer-bottom a {
+    color: #f4f4f4; /* Light link color */
+    text-decoration: none; /* No underline by default */
+    margin: 0 5px; /* Space between links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-bottom a:hover {
+    color: #007bff; /* Accent color on link hover */
+    text-decoration: underline; /* Underline on link hover */
+}
+
+/* Responsive Adjustments for smaller screens */
+@media (max-width: 992px) {
+    .footer-col {
+        min-width: 250px; /* Adjust min-width for slightly smaller screens if needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns vertically on small screens */
+        align-items: center; /* Center the stacked columns */
+        padding: 0 15px 30px; /* Adjust padding */
+    }
+
+    .footer-col {
+        width: 100%; /* Make columns take full width when stacked */
+        max-width: 400px; /* Limit max width for readability of stacked content */
+        margin-bottom: 30px; /* Space between stacked columns */
+        text-align: center; /* Center text for stacked columns */
+    }
+
+    .footer-col h3 {
+        margin: 0 auto 25px auto; /* Center heading and its underline */
+    }
+
+    .social-links {
+        justify-content: center; /* Center social icons when stacked */
+    }
+
+    .footer-contact-info p {
+        text-align: center; /* Center contact info text when stacked */
+    }
+}

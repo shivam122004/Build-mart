@@ -1,8 +1,8 @@
-    * {
+ * {
 
-      box-sizing: border-box;
+  box-sizing: border-box;
 
-    }
+ }
 
 
         
@@ -67,7 +67,7 @@
     }
 
     .hero-section {
-      background-image: url("buildmartimage.png");
+      background-image: url("images/buildmartimage.png");
       background-size: cover;
       height: 530px;
       display: flex;
@@ -152,155 +152,149 @@
 }
 
 .footer-col h3 {
-    color: #007bff; /* Accent color for footer headings (a vibrant blue) */
-    font-size: 1.5rem; /* Size for headings */
-    margin-bottom: 25px; /* Space below headings */
-    border-bottom: 2px solid #007bff; /* A subtle underline for headings */
-    padding-bottom: 10px; /* Space between heading text and underline */
-    display: inline-block; /* Makes the border-bottom only as wide as the text */
-}
+    color: #007bff; 
+    font-size: 1.5rem; 
+    margin-bottom: 25px; 
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px; 
+    display: inline-block; 
 
 /* Footer Brand Column Styling */
 .footer-brand {
-    text-align: left; /* Align text content to the left */
+    text-align: left; 
 }
 
 .footer-logo {
-    width: 150px; /* Set a specific width for your logo */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below the logo */
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 20px; 
 }
-
 .footer-brand p {
-    font-size: 0.9rem; /* Smaller font size for descriptive text */
-    line-height: 1.6; /* Improved readability for paragraphs */
-    margin-bottom: 20px; /* Space below paragraph */
-}
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px; 
 
 .social-links {
-    display: flex; /* Use flexbox for social icons */
-    gap: 15px; /* Space between social icons */
-}
+    display: flex; 
+    gap: 15px; 
 
 .social-icon img {
-    width: 30px; /* Size of social media icons */
+    width: 30px; 
     height: 30px;
-    filter: invert(1); /* Inverts the colors of the icons, making them white for a dark background */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
+    filter: invert(1);
+    transition: transform 0.3s ease; 
 
 .social-icon:hover img {
-    transform: translateY(-5px); /* Simple upward lift on hover */
+    transform: translateY(-5px);
 }
 
-/* Footer Contact Info Column Styling */
+/* Footer Contact Info */
 .footer-contact-info p {
-    font-size: 1rem; /* Standard font size for contact details */
-    margin-bottom: 10px; /* Space between contact lines */
-    text-align: left; /* Align text content to the left */
+    font-size: 1rem; 
+    margin-bottom: 10px; 
+    text-align: left; 
 }
 
 /* Footer Form Column Styling */
 .footer-form-col {
-    text-align: left; /* Align form labels/placeholders to the left */
+    text-align: left; 
 }
 
 .footer-form input[type="text"],
 .footer-form input[type="email"],
 .footer-form textarea {
-    width: 100%; /* Make input fields and textarea fill their container */
-    padding: 12px; /* Internal padding for input fields */
-    margin-bottom: 15px; /* Space between form elements */
-    border: 1px solid #555; /* Subtle border for fields */
-    background-color: #444; /* Slightly lighter dark background for fields */
-    color: #f4f4f4; /* Light text color for user input */
-    border-radius: 5px; /* Slightly rounded corners */
-    font-size: 1rem; /* Font size for input text */
-    font-family: 'Source Sans 3', sans-serif; /* Consistent font */
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 15px; 
+    border: 1px solid #555; 
+    background-color: #444; 
+    color: #f4f4f4; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    font-family: 'Source Sans 3', sans-serif; 
 }
 
 .footer-form textarea {
-    resize: vertical; /* Allow users to resize textarea vertically */
-    min-height: 80px; /* Minimum height for the textarea */
+    resize: vertical; 
+    min-height: 80px; 
 }
 
 .footer-form input::placeholder,
 .footer-form textarea::placeholder {
-    color: #bbb; /* Lighter placeholder text color */
+    color: #bbb; 
 }
 
 .footer-submit-btn {
-    background-color: #007bff; /* Accent button color */
-    color: white; /* White text on button */
-    padding: 12px 25px; /* Padding for the button */
-    border: none; /* No border for the button */
-    border-radius: 5px; /* Rounded corners for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 1.1rem; /* Font size for button text */
-    font-weight: bold; /* Bold text for the button */
-    width: 100%; /* Make button full width */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #007bff; 
+    color: white; 
+    padding: 12px 25px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1.1rem; 
+    font-weight: bold;
+    width: 100%; 
+    transition: background-color 0.3s ease; 
 }
 
 .footer-submit-btn:hover {
-    background-color: #0056b3; /* Darker accent color on hover */
+    background-color: #0056b3; 
 }
 
-/* Footer Bottom Section (Copyright & Legal Links) */
+
 .footer-bottom {
-    background-color: #222; /* Even darker background for the bottom strip */
-    padding: 20px; /* Padding inside the bottom strip */
-    text-align: center; /* Center the text */
-    font-size: 0.9rem; /* Smaller font size */
-    border-top: 1px solid #444; /* A subtle top border to separate it */
+    background-color: #222; 
+    padding: 20px; 
+    text-align: center; 
+    font-size: 0.9rem; 
+    border-top: 1px solid #444; 
 }
 
 .footer-bottom p {
-    margin: 0; /* Remove default paragraph margin */
+    margin: 0; 
 }
 
 .footer-bottom a {
-    color: #f4f4f4; /* Light link color */
-    text-decoration: none; /* No underline by default */
-    margin: 0 5px; /* Space between links */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: #f4f4f4; 
+    text-decoration: none; 
+    margin: 0 5px; 
+    transition: color 0.3s ease; 
 }
 
 .footer-bottom a:hover {
-    color: #007bff; /* Accent color on link hover */
-    text-decoration: underline; /* Underline on link hover */
+    color: #007bff; 
+    text-decoration: underline; 
 }
 
-/* Responsive Adjustments for smaller screens */
 @media (max-width: 992px) {
     .footer-col {
-        min-width: 250px; /* Adjust min-width for slightly smaller screens if needed */
+        min-width: 250px; 
     }
 }
 
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Stack columns vertically on small screens */
-        align-items: center; /* Center the stacked columns */
-        padding: 0 15px 30px; /* Adjust padding */
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0 15px 30px; 
     }
 
     .footer-col {
-        width: 100%; /* Make columns take full width when stacked */
-        max-width: 400px; /* Limit max width for readability of stacked content */
-        margin-bottom: 30px; /* Space between stacked columns */
-        text-align: center; /* Center text for stacked columns */
+        width: 100%; 
+        max-width: 400px; 
+        margin-bottom: 30px; 
+        text-align: center;
     }
 
     .footer-col h3 {
-        margin: 0 auto 25px auto; /* Center heading and its underline */
+        margin: 0 auto 25px auto; 
     }
 
     .social-links {
-        justify-content: center; /* Center social icons when stacked */
+        justify-content: center; 
     }
 
     .footer-contact-info p {
-        text-align: center; /* Center contact info text when stacked */
+        text-align: center; 
     }
 }

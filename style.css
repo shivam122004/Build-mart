@@ -1,70 +1,127 @@
- * {
 
-  box-sizing: border-box;
+* {
+    box-sizing: border-box; 
+}
 
- }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
 
-        
-        body {
-          margin: 0;
-          padding: 0;
-        }
-        .left {
-          display: inline-block;
-          position: absolute;
-          left: 25px;
-          top: 20px;
-        }
-        .left img {
-          width: 150px;
-          height: 100px;
-        }
-        .mid {
-          display: block;
-          width: 52%;
-          margin: 20px auto;
-        }
-        .right {
-          position: absolute;
-          right: 25px;
-          top: 5px;
-          display: inline-block;
-        }
-        .navbar li {
-          display: inline;
-          margin: 20px;
-          font-size: 20px;
-          font-weight: bold;
-        }
-        .navbar li a {
-          text-decoration: none;
-          color: black;
-          font-size: 25px;
-        }
-        .navbar li a:hover {
-          color: blue;
-          text-decoration: underline;
-        }
-        .button {
-          background-color: white;
-          color: black;
-          font-size: 20px;
-          font-weight: bold;
-          padding: 10px 20px;
-          margin: 10px;
-          cursor: pointer;
-          transition: all 0.3s ease;
-        }
-        .button:hover {
-          color: blue;
-          text-decoration: underline;
-        }
-        body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh; 
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo-img {
+    height: 80px; 
+    width: auto;
+    transition: transform 0.3s ease; 
+}
+
+.logo-img:hover {
+    transform: scale(1.1); 
+}
+
+/*MIDDLENAVBAR */
+.nav-links {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    gap: 25px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent; 
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.nav-links a:hover {
+    color: #007bff; 
+    border-bottom: 2px solid #007bff; 
+}
+
+/*RIGHTBUTTONS*/
+.right {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease; 
+}
+
+/* Login Button Style */
+.login-btn {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+.login-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Sign Up Button Style */
+.signup-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/*
+   RESPONSIVENES*/
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        padding: 15px;
+        gap: 15px;
     }
+
+    .nav-links {
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        justify-content: center; 
+    }
+
+    .button {
+        width: 45%; 
+    }
+}
 
     .hero-section {
       background-image: url("images/buildmartimage.png");
@@ -158,7 +215,7 @@
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px; 
     display: inline-block; 
-
+}
 /* Footer Brand Column Styling */
 .footer-brand {
     text-align: left; 
@@ -173,17 +230,17 @@
     font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 20px; 
-
+}
 .social-links {
     display: flex; 
     gap: 15px; 
-
+}
 .social-icon img {
     width: 30px; 
     height: 30px;
     filter: invert(1);
     transition: transform 0.3s ease; 
-
+}
 .social-icon:hover img {
     transform: translateY(-5px);
 }
